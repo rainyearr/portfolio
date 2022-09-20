@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-// import Typed from "react-typed";
+import Typed from "react-typed";
 
 function Main() {
   return (
@@ -27,13 +27,13 @@ function Main() {
           <h1 className="py-4 text-2xl font-bold text-gray-700 sm:text-2xl md:text-3xl">
             I have experiences with{" "}
             <span className="text-[#5651e5]">
-              {/* <Typed
+              <Typed
                 className="text-[#5651e5] pl-2 text-2xl sm:text-2xl md:text-3xl font-extrabold md:pl-4"
                 strings={["React", "Next JS", "Tailwind CSS", "UI/UX Design"]}
                 typeSpeed={120}
                 backSpeed={140}
                 loop
-              /> */}
+              />
             </span>
           </h1>
         </div>
