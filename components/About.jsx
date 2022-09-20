@@ -7,8 +7,8 @@ import { Link } from "react-scroll";
 const About = () => {
   return (
     <div name="about" className="w-full h-screen">
-      <div className="flex flex-col items-center justify-start h-full max-w-screen-lg px-4 mx-auto md:flex-row">
-        <div className="flex flex-col justify-center w-full h-full">
+      <div className="items-center justify-start h-full max-w-screen-lg grid-cols-3 gap-8 px-4 mx-auto md:grid md:flex-row">
+        <div className="flex flex-col justify-center w-full h-full col-span-2">
           <h2 className="inline p-2 text-4xl font-bold text-gray-700">About</h2>
           <p className="w-full py-4 text-xl text-gray-500 md:text-xl">
             An aspiring web-developer looking to combine my academic learnings
@@ -30,14 +30,12 @@ const About = () => {
             </Link>
           </div>
         </div>
-        {/* <div>
+        <div className="hidden md:flex md:col-span-1">
           <Image
             src={HeroImage}
-            height="70%"
-            width="40%"
             className="rounded-2xl mx-auto w-[400px] md:w-[400px] p-3 hidden md:flex"
           />
-        </div> */}
+        </div>
       </div>
     </div>
   );
